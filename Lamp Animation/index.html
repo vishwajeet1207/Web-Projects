@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../css/bootsrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero" >
+        <nav>
+            <img src="menu.png" class="menu_img">
+            <img src="logo.png" class="logo">
+ 
+            <ul type="none">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li ><a href="">Contact</a></li>
+                <li><a href="">Lamp Collection</a></li>
+
+            </ul>
+            <button type="button" onclick="togglebtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp_container">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="light">
+        </div>
+        <div class="text_container">
+            <h1>Latest <br> in lighting</h1>
+            <p>This is the first lamp fromour commpany we are huge collection of <br> modern lamps in all categries from home use to office use</p>
+            <a href="">Check All Collection</a>
+        </div>
+
+        <div class="control">
+                 <p>04</p>
+                 <div class="line">
+                    <span></span>
+                 </div>
+                 <p>05</p>
+
+
+        </div>
+    </div>
+     
+    <!-- {{>contact.html}} -->
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../jq/bootstrap.js" type="text/javascript"></script>
+
+    <script>
+
+        var btn=document.getElementById("btn")
+        var light=document.getElementById("light")
+        function togglebtn(){
+            btn.classList.toggle("active")
+            light.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
